@@ -50,7 +50,7 @@ export default class SoundScreen extends Component{
   }
 
   fetchData = async () => {
-      const query = new Parse.Query('Leaderboard');
+      const query = new Parse.Query('Sounds');
       await query.findAll()
       .then(response => sortData(response))
       .then((response) => {
