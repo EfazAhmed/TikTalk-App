@@ -40,7 +40,7 @@ export default class SoundScreen extends Component{
       <ListItem.Content style={styles.item}>
         <ListItem.Title style={styles.title_text} ellipsize='tail' numberOfLines={1}>{item.get('user')}</ListItem.Title>
         <ListItem.Subtitle style={styles.artist_text}>{item.get('nickname')}</ListItem.Subtitle>
-        <ListItem.Subtitle style={styles.views_text}>{item.get('followers')}</ListItem.Subtitle>
+        <ListItem.Subtitle style={styles.views_text}>{item.get('followers') + ' followers'}</ListItem.Subtitle>
       </ListItem.Content>
     </ListItem>
   )
@@ -62,7 +62,6 @@ export default class SoundScreen extends Component{
   }
 
   render() {
-      console.log(this.state.data)
     return (
       <View style={styles.container}>
       <Header title='TikTalk'/>
@@ -85,14 +84,14 @@ export default class SoundScreen extends Component{
     },
     item: {
       marginTop: 10,
-      height: 50,
+      height: 40,
       fontSize: 24,
       marginLeft: 10,
       marginRight: 10
     },
     item_image: {
-      width: 50,
-      height: 50
+      width: 40,
+      height: 40
     },
     title_text: {
       fontSize: 18,
