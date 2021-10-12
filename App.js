@@ -1,21 +1,46 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import SoundScreen from './navigation/screens/SoundScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import CreatorScreen from './navigation/screens/CreatorScreen';
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator
+        screenOptions = {({ route }) => ({
+          tabBarIcon: ({focused, color, size}) => {
+            let iconName;
+
+            if (route.name === 'Sounds') {
+              iconName = focused
+              ? 'music-circle'
+              : 'music-circle-outline';
+              return <MaterialCommunityIcons name={iconName} size={size} color={color} />;
+            }
+            else if (route.name === 'Creators') {
+              iconName = focused
+              ? 'person-circle'
+              : 'person-circle-outline';
+              return <Ionicons name={iconName} size={size} color={color} />;
+
+            }
+          },
+          tabBarActiveTintColor: '#FE2C55',
+          tabBarInactiveTintColor: '#FE2C55',
+        })}
+      >
+        <Tab.Screen name="Sounds" component={SoundScreen}
+        options={{headerShown: false}} />
+        <Tab.Screen name="Creators" component={CreatorScreen}
+        options={{headerShown: false}} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
