@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, FlatList } from 'react-native'
+import { View, Text, StyleSheet, FlatList, Dimensions } from 'react-native'
 import Header from '../../components/Header'
 import { ListItem, Avatar } from 'react-native-elements';
 import Parse from 'parse/react-native'
@@ -79,7 +79,7 @@ export default class SoundScreen extends Component{
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      paddingTop: 60,
+      paddingTop: Dimensions.get('window').height/40,
       backgroundColor: '#FE2C55'
     },
     item: {

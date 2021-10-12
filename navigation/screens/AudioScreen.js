@@ -21,7 +21,7 @@ export default class SoundScreen extends Component{
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      paddingTop: 60,
+      paddingTop: Dimensions.get('window').height/40,
       backgroundColor: '#FE2C55',
     },
     text: {
