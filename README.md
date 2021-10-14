@@ -1,7 +1,7 @@
 
 ##### Tags: `React-Native` `Expo` `ios` `TikTok` `Parse` `Back4App` `JavaScript` `Python` 
 
-`Source`: [hackmd](https://hackmd.io/iTm3xVF1QqqBcjUoR0uh1Q)
+`Source`: [hackmd](https://hackmd.io/jqYfqJvcQkG8YVp48TIRGw#yelp-api)
 
 # TikTalk
 
@@ -84,26 +84,19 @@ Below is the database schema for our simple Parse Databases.
 Below are the following features that are capable for the app:
 
 
-### Top TikTok Sounds Leaderboard
+### Top TikTok Sounds/Creators Leaderboard
 
-- Load data from Yelp API + Search Bar
-	- <img src="https://i.imgur.com/SEyigmC.gif" height=400>
+- Load data from Parse API
+	- <img src="https://imgur.com/un3k9Nl.gif" height=400>
 
 - Animations using [Lottie](https://airbnb.io/lottie/#/) and [SkeletonView](https://github.com/Juanpe/SkeletonView)
 	- <img src="https://imgur.com/EJGYjhl.gif" height=400>
 
-### Top TikTok Sounds Leaderboard
 
-- Login/Logout
-- Messaging/Chatting capabilities
-- Save messages using [Parse Server](https://parseplatform.org/)
-	- <img src="https://imgur.com/vhH5dkG.gif" height=400>
+### (IN-PROGRESS) Voice Recognition + Machine Learning
 
-### Voice Recognition + Machine Learning
-
-- Show business in Map
-- Upload image to Map Pin
-	- <img src="https://imgur.com/Npz2m1A.gif" height=400>
+- Using spectograms to match user's audio input to our TikTok Sounds database.
+	- <img src="" height=400>
 
 
 ## Built With
@@ -117,8 +110,7 @@ Below are the following features that are capable for the app:
 
 - **Efaz Ahmed** - [EfazAhmed](https://github.com/EfazAhmed)
   - Full-Sack Development
-  - UI Design
+  - UI/UX Design
   - MVC Architecture design + implementation
-  - 
 
 

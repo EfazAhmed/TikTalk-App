@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import { ListItem, Avatar } from 'react-native-elements';
 import Parse from 'parse/react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-
+// import LottieView from 'lottie-react-native'
 
 // Initialize the SDK for Parse
 Parse.setAsyncStorage(AsyncStorage)
@@ -30,7 +30,7 @@ function sortData(queryResult) {
 export default class SoundScreen extends Component{
 
   state = {
-    data: []
+    data: [],
   }
 
   renderItem = ({item}) => (
@@ -44,6 +44,8 @@ export default class SoundScreen extends Component{
       </ListItem.Content>
     </ListItem>
   )
+
+
 
   componentDidMount() {
     this.fetchData();
@@ -64,13 +66,14 @@ export default class SoundScreen extends Component{
   render() {
     return (
       <View style={styles.container}>
-      <Header title='TikTalk'/>
-      <FlatList 
-        data={this.state.data}
-        renderItem={this.renderItem}
-        keyExtractor={(x,i) => i.toString()}
-      />
-    </View>
+        <Header title='TikTalk'/>
+        <FlatList 
+          data={this.state.data}
+          renderItem={
+            this.renderItem}
+          keyExtractor={(x,i) => i.toString()}
+        />
+      </View>
     )
   }
   
