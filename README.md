@@ -39,12 +39,6 @@ We used [**Parse**](https://parseplatform.org/) (hosted on [**Back4app**](https:
 [**Beautiful Soup**](https://pypi.org/project/beautifulsoup4/) was used to web scrape websites for data regarding the most popular tiktok sounds and creators.
 
 
-### Network
-
-- `POST` /search – retrieve businesses from a given search query in SF
-
-
-
 ## Database
 
 We used [**mongoDB**](https://www.mongodb.com/) and [**Parse server**](https://parseplatform.org/), hosted on [**Back4App**](https://www.back4app.com/) to manage our data for the application. This helps students focus more on how iOS works connecting to a database and not get distracted or overloaded with learning backend development. 
