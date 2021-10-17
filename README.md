@@ -12,7 +12,7 @@ Developing an app that displays TikTok's most popular sounds, creators, and a fu
 - [TikTalk](#tiktalk)
   - [Table of Contents](#table-of-contents)
   - [Setup/Installation 🏗](#setupinstallation-)
-  - [Yelp API](#yelp-api)
+  - [Parse API](#parse-api)
     - [Network](#network)
   - [Database](#database)
     - [Schema](#schema)
@@ -89,14 +89,14 @@ Below are the following features that are capable for the app:
 - Load data from Parse API
 	- <img src="https://imgur.com/un3k9Nl.gif" height=400>
 
-- Animations using [Lottie](https://airbnb.io/lottie/#/) and [SkeletonView](https://github.com/Juanpe/SkeletonView)
-	- <img src="https://imgur.com/EJGYjhl.gif" height=400>
+<!-- - Animations using [Lottie](https://airbnb.io/lottie/#/) and [SkeletonView](https://github.com/Juanpe/SkeletonView)
+	- <img src="https://imgur.com/EJGYjhl.gif" height=400> -->
 
 
 ### (IN-PROGRESS) Voice Recognition + Machine Learning
 
 - Using spectograms to match user's audio input to our TikTok Sounds database.
-	- <img src="" height=400>
+	- <img src="https://imgur.com/yHydKDI.png" height=400>
 
 
 ## Built With

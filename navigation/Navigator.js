@@ -39,7 +39,7 @@ export default function Navigator() {
           },
           tabBarActiveTintColor: '#FE2C55',
           tabBarInactiveTintColor: '#FE2C55',
-          tabBarShowLabel: false
+          // tabBarShowLabel: false
         })}
       >
         <Tab.Screen name="Sounds" component={SoundScreen}
