@@ -16,8 +16,8 @@ Developing an app that displays TikTok's most popular sounds, creators, and a fu
   - [Database](#database)
     - [Schema](#schema)
   - [Project Demo Features](#project-demo-features)
-    - [Top TikTok Sounds/Creators Leaderboard](#Top TikTok Sounds/Creators Leaderboard)
-    - [Voice Recognition + Machine Learning](#(IN-PROGRESS) Voice Recognition + Machine Learning)
+    - [Top TikTok Sounds/Creators Leaderboard](#Top-TikTok-Sounds/Creators-Leaderboard)
+    - [Voice Recognition + Machine Learning](#(IN-PROGRESS)-Voice-Recognition-+-Machine-Learning)
   - [Built With](#built-with)
   - [Authors](#authors)
 
